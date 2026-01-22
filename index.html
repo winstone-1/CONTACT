@@ -1,34 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>WINSTONE'S FORM</h1>
     <hr>
     <br>
     <form action="submit-form" method="post">
-       <div>
-        <label for="name">Name:</label>
-        <input type="text" name="name" id="name">
-    </div>
-    <br>
-    <div>
-       <label for="label">Email:</label> 
-       <input type="text" name="email" id="user_email">
-       </div>
-       <br>
-       <div>
-        <label for="label">Subject:</label>
-        <input type="text" name="subject" id="subject">
-       </div>
-       <br>
-       <div>
-        <label for="message">Message:</label>
-        <textarea name="message" id="message" rows="10">Write your message here...</textarea>
-        <button type="submit">submit</button>
-       </div>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" placeholder="name">
+        </div>
+        <br>
+        <div>
+            <label for="label">Email:</label>
+            <input type="email" name="email" placeholder="Enter your email">
+        </div>
+        <br>
+        <div>
+            <label for="Age">Age:</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="female">Female:</label>
+            <input type="radio" name="gender" id="female" value="female">
+        </div>
+        <br>
+        <div>
+            <label for="label">Subject:</label>
+            <input type="text" name="subject" placeholder="subject">
+        </div>
+        <br>
+        <div>
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" rows="10"></textarea>
+            <button type="submit">submit</button>
+        </div>
+        <br>
+        <div>
+          <label for="lang1">JAVASCRIPT</label>
+          <input type="radio" name="skill"  value="javascript">
+          <label for="lang2">HTML</label>
+          <input type="radio" name="skill"  value="HTML" >
+          <label for="lang3">CSS</label>
+          <input type="radio" name="skill"  value="CSS">
+        </div>
+        <label for="modules">Choose your current module</label>
+        <select name="modules" id="modules">
+            <option value="web-dev">web dev fundamentals</option>
+            <option value="js">javascript</option>
+            <option value="react">REACT</option>
+            <option value="django">Django</option>
+            <option value="python">Python</option>
+        </select>
     </form>
+
 </html>
